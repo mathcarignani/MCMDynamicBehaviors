@@ -19,6 +19,9 @@
 		C7B7933B17F7586E009143F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B7932317F7586E009143F8 /* UIKit.framework */; };
 		C7B7934317F7586E009143F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7B7934117F7586E009143F8 /* InfoPlist.strings */; };
 		C7B7934517F7586E009143F8 /* MCMDynamicBehaviorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B7934417F7586E009143F8 /* MCMDynamicBehaviorsTests.m */; };
+		C7B7935117F7587C009143F8 /* MCMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B7934F17F7587C009143F8 /* MCMMainViewController.m */; };
+		C7B7935217F7587C009143F8 /* MCMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B7935017F7587C009143F8 /* MCMMainViewController.xib */; };
+		C7B7935617F759AD009143F8 /* box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B7935517F759AD009143F8 /* box@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		C7B7934017F7586E009143F8 /* MCMDynamicBehaviorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCMDynamicBehaviorsTests-Info.plist"; sourceTree = "<group>"; };
 		C7B7934217F7586E009143F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7B7934417F7586E009143F8 /* MCMDynamicBehaviorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMDynamicBehaviorsTests.m; sourceTree = "<group>"; };
+		C7B7934E17F7587C009143F8 /* MCMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMMainViewController.h; sourceTree = "<group>"; };
+		C7B7934F17F7587C009143F8 /* MCMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMMainViewController.m; sourceTree = "<group>"; };
+		C7B7935017F7587C009143F8 /* MCMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCMMainViewController.xib; sourceTree = "<group>"; };
+		C7B7935517F759AD009143F8 /* box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +114,8 @@
 		C7B7932517F7586E009143F8 /* MCMDynamicBehaviors */ = {
 			isa = PBXGroup;
 			children = (
+				C7B7935817F759BF009143F8 /* Controllers */,
+				C7B7935717F759B8009143F8 /* Resources */,
 				C7B7932E17F7586E009143F8 /* MCMAppDelegate.h */,
 				C7B7932F17F7586E009143F8 /* MCMAppDelegate.m */,
 				C7B7933117F7586E009143F8 /* Images.xcassets */,
@@ -142,6 +151,24 @@
 				C7B7934117F7586E009143F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7B7935717F759B8009143F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B7935517F759AD009143F8 /* box@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7B7935817F759BF009143F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7B7934E17F7587C009143F8 /* MCMMainViewController.h */,
+				C7B7934F17F7587C009143F8 /* MCMMainViewController.m */,
+				C7B7935017F7587C009143F8 /* MCMMainViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B7935217F7587C009143F8 /* MCMMainViewController.xib in Resources */,
 				C7B7932A17F7586E009143F8 /* InfoPlist.strings in Resources */,
 				C7B7933217F7586E009143F8 /* Images.xcassets in Resources */,
+				C7B7935617F759AD009143F8 /* box@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +271,7 @@
 			files = (
 				C7B7933017F7586E009143F8 /* MCMAppDelegate.m in Sources */,
 				C7B7932C17F7586E009143F8 /* main.m in Sources */,
+				C7B7935117F7587C009143F8 /* MCMMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
